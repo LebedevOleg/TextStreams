@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextStreams.Host", "src\server\TextStreams.Host\TextStreams.Host.csproj", "{2DC3C6D2-7784-4E6B-88BB-9E4CC61D1F41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextStreams.Api.Contracts", "src\server\TextStreams.Api.Contracts\TextStreams.Api.Contracts.csproj", "{6E812558-92D1-4432-B854-1AFFE5940456}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextStreams.AppServices.Contracts", "src\server\TextStreams.AppServices.Contracts\TextStreams.AppServices.Contracts.csproj", "{72841F16-9219-4045-9750-B8630F552AD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextStreams.AppServices", "src\server\TextStreams.AppServices\TextStreams.AppServices.csproj", "{8CB8F0BF-637C-4DED-9BFC-FB1192F94235}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextStreams.DataAccess", "src\server\TextStreams.DataAccess\TextStreams.DataAccess.csproj", "{D28DB7B3-4731-4A9B-B5D9-7B8341C723DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commentator.Application", "src\Commentator.Application\Commentator.Application.csproj", "{00627DC1-16AE-4868-B546-ADD21511A11A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client.Application", "src\Client.Application\Client.Application.csproj", "{41384CDF-6837-403D-85B6-941433AD9C0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextStreams.Migrations", "src\server\TextStreams.Migrations\TextStreams.Migrations.csproj", "{0C8DF17B-BB43-47FE-9F3F-B5D06E74E850}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextStreams.UnitTests", "tests\TextStreams.UnitTests\TextStreams.UnitTests.csproj", "{40A91D8E-F460-4FEF-9817-53F318850329}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{F328B02C-DB44-4D1F-9ACE-EF296F6A2BC0}"
+	ProjectSection(SolutionItems) = preProject
+		..\docker-compose.yml = ..\docker-compose.yml
+		..\..\README.md = ..\..\README.md
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DC3C6D2-7784-4E6B-88BB-9E4CC61D1F41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DC3C6D2-7784-4E6B-88BB-9E4CC61D1F41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DC3C6D2-7784-4E6B-88BB-9E4CC61D1F41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DC3C6D2-7784-4E6B-88BB-9E4CC61D1F41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E812558-92D1-4432-B854-1AFFE5940456}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E812558-92D1-4432-B854-1AFFE5940456}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E812558-92D1-4432-B854-1AFFE5940456}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E812558-92D1-4432-B854-1AFFE5940456}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72841F16-9219-4045-9750-B8630F552AD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72841F16-9219-4045-9750-B8630F552AD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72841F16-9219-4045-9750-B8630F552AD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72841F16-9219-4045-9750-B8630F552AD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CB8F0BF-637C-4DED-9BFC-FB1192F94235}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CB8F0BF-637C-4DED-9BFC-FB1192F94235}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CB8F0BF-637C-4DED-9BFC-FB1192F94235}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CB8F0BF-637C-4DED-9BFC-FB1192F94235}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D28DB7B3-4731-4A9B-B5D9-7B8341C723DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D28DB7B3-4731-4A9B-B5D9-7B8341C723DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D28DB7B3-4731-4A9B-B5D9-7B8341C723DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D28DB7B3-4731-4A9B-B5D9-7B8341C723DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00627DC1-16AE-4868-B546-ADD21511A11A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00627DC1-16AE-4868-B546-ADD21511A11A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00627DC1-16AE-4868-B546-ADD21511A11A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00627DC1-16AE-4868-B546-ADD21511A11A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41384CDF-6837-403D-85B6-941433AD9C0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41384CDF-6837-403D-85B6-941433AD9C0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41384CDF-6837-403D-85B6-941433AD9C0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41384CDF-6837-403D-85B6-941433AD9C0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C8DF17B-BB43-47FE-9F3F-B5D06E74E850}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C8DF17B-BB43-47FE-9F3F-B5D06E74E850}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C8DF17B-BB43-47FE-9F3F-B5D06E74E850}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C8DF17B-BB43-47FE-9F3F-B5D06E74E850}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40A91D8E-F460-4FEF-9817-53F318850329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40A91D8E-F460-4FEF-9817-53F318850329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40A91D8E-F460-4FEF-9817-53F318850329}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40A91D8E-F460-4FEF-9817-53F318850329}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

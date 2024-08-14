@@ -1,0 +1,13 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=31adea07_002D131f_002D4355_002Dbe6f_002Dd30b95605fab/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="StreamValidatorTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::40A91D8E-F460-4FEF-9817-53F318850329::net7.0::TextStreams.UnitTests.TextStreams.AppServices.Validators.StreamValidatorTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::40A91D8E-F460-4FEF-9817-53F318850329::net7.0::TextStreams.UnitTests.TextStreams.DataAccess.Messages.AddMessageTest.Add_Valid&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::40A91D8E-F460-4FEF-9817-53F318850329::net7.0::TextStreams.UnitTests.TextStreams.DataAccess.Messages.GetMessagesTests.GetMessages_Valid&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::40A91D8E-F460-4FEF-9817-53F318850329::net7.0::TextStreams.UnitTests.TextStreams.DataAccess.Streams.CreateStreamTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::40A91D8E-F460-4FEF-9817-53F318850329::net7.0::TextStreams.UnitTests.TextStreams.DataAccess.Streams.GetStreamsTests.GetStreams_None_Valid&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::40A91D8E-F460-4FEF-9817-53F318850329::net7.0::TextStreams.UnitTests.TextStreams.DataAccess.Streams.GetStreamsTests.GetStreams_NotNone_Valid&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::40A91D8E-F460-4FEF-9817-53F318850329::net7.0::TextStreams.UnitTests.TextStreams.DataAccess.Streams.UpdateStreamStatusTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::40A91D8E-F460-4FEF-9817-53F318850329::net7.0::TextStreams.UnitTests.TextStreams.DataAccess.Streams.UpdateGoalsStatus.UpdateGoalsStatus_Valid&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

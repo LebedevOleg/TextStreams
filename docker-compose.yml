@@ -1,0 +1,56 @@
+version: "3.8"
+
+services:
+  text-stream-service:
+    image: "text-stream-service:latest"
+    build:
+      context: ./TextStreams.Application
+      dockerfile: Dockerfile-Application
+    container_name: text-stream-service
+    volumes:
+      - ./text-stream-application/appsettings.json:/src/appsettings.json
+    ports:
+      - "2024:80"
+    depends_on:
+      text-stream-db:
+        condition: service_healthy
+      text-stream-migrations:
+        condition: service_completed_successfully
+    networks:
+      - stream-network
+  
+  text-stream-migrations:
+    image: "text-stream-migrations:latest"
+    build:
+      context: ./TextStreams.Application
+      dockerfile: Dockerfile-Migration
+    container_name: text-stream-migrations
+    volumes:
+      - ./migration-service/appsettings.json:/src/appsettings.json
+    depends_on:
+      text-stream-db:
+        condition: service_healthy
+    networks:
+      - stream-network
+  
+  text-stream-db:
+    image: postgres:latest
+    container_name: text-stream-db
+    environment:
+      POSTGRES_USER: "postgres"
+      PGUSER: "postgres"
+      POSTGRES_PASSWORD: "password"
+      POSTGRES_DB: "football"
+    ports:
+      - "6432:5432"
+    networks:
+      - stream-network
+    healthcheck:
+      test: /usr/bin/pg_isready
+      interval: 5s
+      timeout: 10s
+      retries: 120
+
+networks:
+  stream-network:
+    name: "stream-network"
